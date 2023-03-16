@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace csharp_fundamentals_methods.Main
+namespace csharp_fundamentals_methods_exemplar.Main
 {
+
     public class Exercise
     {
         /*
@@ -83,8 +84,6 @@ namespace csharp_fundamentals_methods.Main
             error, 10   | ERROR!!!!!!!!!!
          */
 
-
-
-
     }
+
 }
