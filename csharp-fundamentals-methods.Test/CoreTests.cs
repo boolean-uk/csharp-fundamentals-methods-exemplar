@@ -3,14 +3,14 @@ using NUnit.Framework;
 
 namespace csharp_fundamentals_methods_exemplar.Test
 {
-   public class ExerciseTest
-   {
-            Exercise exercise;
+    public class CoreTests
+    {
+        Core exercise;
 
-            public ExerciseTest()
-            {
-                this.exercise = new Exercise();
-            }
+        public CoreTests()
+        {
+            this.exercise = new Core();
+        }
 
             [Test]
             public void shouldGreetName()
