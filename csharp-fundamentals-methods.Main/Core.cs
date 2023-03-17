@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -51,7 +52,22 @@ namespace csharp_fundamentals_methods_exemplar.Main
             Nathan | Hi, Nathan :)
             Edward | Hi, Edward :)
          */
-        public string happilyGreet()
+        public string happilyGreet(string name)
+        {
+            return $"Hi, {name} :)";
+        }
+
+        
+       
+
+       
+
+        public double bakingTime()
+        {
+            throw new NotImplementedException();
+        }
+
+        public double remainingBakeTime(int v)
         {
             throw new NotImplementedException();
         }
@@ -67,8 +83,18 @@ namespace csharp_fundamentals_methods_exemplar.Main
             10, 13 | [10,11,12,13]
             -1, 1  | [-1,0,1]
          */
+        public int[] constructNumberArray(int lower, int upper)
+        {
 
+            int[] resultArray = new int[upper - lower + 1];
+            for (int x = 0; x < resultArray.Length; x++)
+            {
+                resultArray[x] = x + lower;
+            }
 
+            return resultArray;
+
+        }
 
 
         //TODO: 4. Shout at a dev
@@ -82,6 +108,16 @@ namespace csharp_fundamentals_methods_exemplar.Main
             disaster, 5 | DISASTER!!!!!
             error, 10   | ERROR!!!!!!!!!!
          */
+        public string shout(string shoutout, int exclaimcount)
+        {
+            StringBuilder result = new StringBuilder();
+            result.Append(shoutout.ToUpper());
+            for(int x=1;x<=exclaimcount;x++)
+            {
+                result.Append("!");
+            }
+            return result.ToString();
+        }
 
     }
 
